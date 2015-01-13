@@ -19,6 +19,13 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Does the notification LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorNotificationLed">true</bool>
+
+    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">true</bool>
+
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
 
@@ -86,7 +93,7 @@
          should be empty. -->
     <string-array translatable="false" name="config_tether_bluetooth_regexs">
            <item>"bt-pan"</item>
+
     </string-array>
 
-    <integer name="config_deviceHardwareKeys">7</integer>
 </resources>
